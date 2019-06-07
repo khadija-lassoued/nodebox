@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "843910191790",
+    "firebase_url": "https://nodebox.firebaseio.com",
+    "project_id": "nodebox",
+    "storage_bucket": "nodebox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843910191790:android:335b79c44e496fad",
+        "android_client_info": {
+          "package_name": "tn.insat.nodebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843910191790-neeo52ohq7plc33cbsjtuvdv32f5s0db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tn.insat.nodebox",
+            "certificate_hash": "ede4f970e03aac69d08bd996c52889dbfbb5c35d"
+          }
+        },
+        {
+          "client_id": "843910191790-68q1tlb50etgqqjckrpr4sb6mselpahc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVUzI-ur7ojxiUE_kl4-1Vmyw4Ilaos_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843910191790-68q1tlb50etgqqjckrpr4sb6mselpahc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

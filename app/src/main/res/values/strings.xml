@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">nodebox</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login / sign up-->
+    <string name="prompt_name">User name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="action_reset">Reset Password</string>
+    <string name="action_goto">Don\'t have an account?</string>
+    <string name="remember">Remember me</string>
+    <string name="reset_password">Forget your password?</string>
+    <string name="reset_instruction">Please provide the email address used when creating your account. An email will be sent to to that address, so follow the instructions.</string>
+    <string name="error_incorrect_information">The password or email is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="action_return">Already have an account?</string>
+    <string name="error_field_required">This field is required</string>
+    <!--String related to scenes-->
+    <string name="scenes">Scenes let you set your own rule in one tap.</string>
+    <string name="rules">Create your own scene</string>
+    <string name="morning">Get ready for your day with music </string>
+    <string name="night">Turn everything off before bedtime</string>
+    <string name="movie">Turn off the lights for showtime</string>
+    <string name="leaving">Lock up your home with one touch</string>
+    <!--Home-->
+    <string name="add_devices">It seems you haven\'t added any devices yet. Tap + to search for new devices.</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+</resources>

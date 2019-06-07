@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!--app bar-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:id="@+id/app_bar"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/appbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/devices_list"
+        android:paddingBottom="50dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="end"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--wait until data is fetched-->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avi"
+        android:layout_gravity="center"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_devices"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/add_devices"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <!--scan button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scan"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        app:layout_anchor="@id/bottom_navigation"
+        app:layout_anchorGravity="right"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/fab_margin"
+        android:theme="@style/AppTheme.Button"
+        android:src="@drawable/ic_add" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hide"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--scanned devices list-->
+        <ListView
+            android:id="@+id/scan_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:background="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/loading_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/colorAccent"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
